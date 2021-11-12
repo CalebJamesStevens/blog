@@ -3,4 +3,5 @@
 
 <ul>
     <li><%= link to "Edit", edit_article_path(@article) %></li>
+    <li><%= link to "Delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" }%></li>
 </ul>
